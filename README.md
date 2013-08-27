@@ -3,6 +3,10 @@ neo4jcp_private
 
 Neo4jCP is a compact and convenient Control Panel for managing Neo4j databases and controlling a Neo4j Server Service. It runs as a tray icon utility under Windows OS. An executable is provided for those who just want to use it. Source for the Autohotkey script is provided.
 
+You may start, stop, and restart the Neo4j Server Service from Neo4jCP as well as create, clone/copy, back-up, delete, and quickly switch between any databases available in your Neo4j 'data' storage folder/path.
+
+Initial Use Expectation: This Neo4j Control Panel is intended as a lightweight, convenient PERSONAL utility primarily for individuals running Neo4j locally on a Windows machine for learning and development purposes. It is especially designed for 'learning by doing' using the many available sample databases referenced in Neo4j learning materials such as: http://www.neo4j.org/develop/example_data.
+
 Enabling the Built-in Windows Adminstrator User Account
 =======================================================
 
