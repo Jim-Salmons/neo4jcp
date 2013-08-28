@@ -1,4 +1,4 @@
-neo4jcp
+Neo4jCP
 =======
 
 __Neo4jCP__ is a compact and convenient Control Panel for *managing Neo4j databases* and *controlling a Neo4j Server Service*. It runs as a __tray icon utility__ under __Windows OS__. An executable is provided for those who just want to use it. Source for the __Autohotkey script__ is provided.
