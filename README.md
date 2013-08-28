@@ -1,17 +1,17 @@
 neo4jcp_private
 ===============
 
-Neo4jCP is a compact and convenient Control Panel for managing Neo4j databases and controlling a Neo4j Server Service. It runs as a tray icon utility under Windows OS. An executable is provided for those who just want to use it. Source for the Autohotkey script is provided.
+__Neo4jCP__ is a compact and convenient Control Panel for *managing Neo4j databases* and *controlling a Neo4j Server Service*. It runs as a __tray icon utility__ under __Windows OS__. An executable is provided for those who just want to use it. Source for the Autohotkey script is provided.
 
 You may start, stop, and restart the Neo4j Server Service from Neo4jCP as well as create, clone/copy, back-up, delete, and quickly switch between any databases available in your Neo4j 'data' storage folder/path.
 
-Intended Use: Neo4j Control Panel is intended as a lightweight, convenient PERSONAL utility primarily for individuals running Neo4j locally on a Windows machine for learning and development purposes. It is especially designed for 'learning by doing' using the many available sample databases referenced in Neo4j learning materials such as: http://www.neo4j.org/develop/example_data. (This is NOT a Control Panel intended for use by professional DBAs or sysadmins, etc.)
+__Intended Use__: Neo4j Control Panel is a lightweight, convenient utility primarily for PERSONAL use by individuals running Neo4j locally on a Windows machine for learning and development purposes. It is especially designed for 'learning by doing' using the many available sample databases referenced in Neo4j learning materials such as: http://www.neo4j.org/develop/example_data. (This is NOT a Control Panel intended for use by professional DBAs or sysadmins needing an admin tool for deployed Neo4j systems.)
 
-Current State: "I've scratched my itch." This utility was developed initially to help me during personal learning of Neo4j. Its emphasis is on quickly and easily switching among, adding, cloning/copying, and backing up multiple databases. This utility has not been tested on anything other than my personal development box which is Windows 7 x64. YMMV.
+__Current State__: "I've scratched my itch." This utility was developed initially to help me during personal learning of Neo4j. Its emphasis is on quickly and easily switching among, adding, cloning/copying, and backing up multiple databases. This utility has not been tested on anything other than my personal development box which is Windows 7 x64. YMMV.
 
 ## Enabling the Built-in Windows Adminstrator User Account
 
-If you are running Windows Vista, 7, or 8, you may need to enable your built-in Windows 'Administrator' User account for this Control Panel to function correctly. 
+If you are running Windows Vista, 7, or 8, you may need to enable your built-in __Windows 'Administrator' User account__ for this Control Panel to function correctly. 
 
 Neo4jCP must spawn processes that run as the built-in Windows 'Administator' User when controlling the Neo4j Server Service. Note that launching an application or command prompt 'As Administrator' under later Windows versions is NOT the same as having the 'Administrator' User account enabled.
 
@@ -41,7 +41,7 @@ You will need to go to the Manage User Accounts section of the Windows Control P
 
 ## Other Bits
 
-Before Use: Read through and edit the Neo4jCP.ini file to configure the Control Panel for your set-up and preferences. Be sure to adjust all paths to match your local configuration.
+__Before Use__: Read through and edit the Neo4jCP.ini file to configure the Control Panel for your set-up and preferences. Be sure to adjust all paths to match your local configuration.
 
 If you prefer to run Neo4jCP from its Autohotkey script source, simply install Autohotkey from http://www.autohotkey.com/ and run the Neo4jCP.ahk script together with its associated files found in the 'source' subfolder of the Neo4jCP repository or the project's zip file. Better yet, do you have an 'itch to scratch' that pushes Neo4jCP forward? Fork it! :-)
 
