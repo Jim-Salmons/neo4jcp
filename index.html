@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Neo4jCP : A compact Control Panel for Neo4j Server and DBs on Windows OS." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Neo4jCP</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Jim-Salmons/neo4jcp">View on GitHub</a>
+
+          <h1 id="project_title">Neo4jCP</h1>
+          <h2 id="project_tagline">A compact Control Panel for Neo4j Server and DBs on Windows OS.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Jim-Salmons/neo4jcp/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Jim-Salmons/neo4jcp/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><strong>Neo4jCP</strong> is a compact and convenient Control Panel for <em>managing Neo4j databases</em> and <em>controlling a Neo4j Server Service</em>. It runs as a <strong>tray icon utility</strong> under <strong>Windows OS</strong>. An executable is provided for those who just want to use it. Source for the <strong>Autohotkey script</strong> is provided.</p>
+
+<p><strong>Features</strong>: You may start, stop, and restart the Neo4j Server Service from Neo4jCP as well as create, clone/copy, back-up, delete, and quickly switch between any databases available in your Neo4j 'data' storage folder/path.</p>
+
+<p><strong>Intended Use</strong>: Neo4j Control Panel is a lightweight, convenient utility primarily for PERSONAL use by individuals running Neo4j locally on a Windows machine for learning and development purposes. It is especially designed for 'learning by doing' using the many available sample databases referenced in Neo4j learning materials such as: <a href="http://www.neo4j.org/develop/example_data">http://www.neo4j.org/develop/example_data</a>. (This is NOT a Control Panel intended for use by professional DBAs or sysadmins needing an admin tool for deployed Neo4j systems.)</p>
+
+<p><strong>Current State</strong>: "I've scratched my itch." This utility was developed initially to help me during personal learning of Neo4j. Its emphasis is on quickly and easily switching among, adding, cloning/copying, and backing up multiple databases. This utility has not been tested on anything other than my personal development box which is Windows 7 x64. YMMV.</p>
+
+<h3>
+<a name="enabling-the-built-in-windows-adminstrator-user-account" class="anchor" href="#enabling-the-built-in-windows-adminstrator-user-account"><span class="octicon octicon-link"></span></a>Enabling the Built-in Windows Adminstrator User Account</h3>
+
+<p>If you are running Windows Vista, 7, or 8, you may need to enable your built-in <strong>Windows 'Administrator' User account</strong> for this Control Panel to function correctly. </p>
+
+<p>Neo4jCP must spawn processes that run as the built-in Windows 'Administator' User when controlling the Neo4j Server Service. Note that launching an application or command prompt 'As Administrator' under later Windows versions is NOT the same as having the 'Administrator' User account enabled.</p>
+
+<p>It is easy to enable your built-in 'Administrator' User account if it is not already available. Simply open an adminstrator-elevated command prompt window and enter this command:</p>
+
+<pre><code>net user administrator /active:yes
+</code></pre>
+
+<p>Disabling is just as easy:</p>
+
+<pre><code>net user administrator /active:no
+</code></pre>
+
+<p>Here's a link to the helpful, illustrated article at HowToGeek.com that helped my understand/use this feature:</p>
+
+<p><a href="http://www.howtogeek.com/howto/windows-vista/enable-the-hidden-administrator-account-on-windows-vista/">http://www.howtogeek.com/howto/windows-vista/enable-the-hidden-administrator-account-on-windows-vista/</a></p>
+
+<h3>
+<a name="important-once-enabled" class="anchor" href="#important-once-enabled"><span class="octicon octicon-link"></span></a>IMPORTANT: Once enabled...</h3>
+
+<p>You will need to go to the Manage User Accounts section of the Windows Control Panel for your version of Windows, select the newly visible Administrator User account, then set its password. Once the 'Administrator' password is set, you are ready to configure Neo4jCP for routine use with no or on-first-use privilege-elevation prompts. You may choose one of two methods to handle admin authentication:</p>
+
+<ol>
+<li><p>You can enter the 'Administrator' password in your Neo4jCP.ini file so you won't have to enter it ever when using Neo4jCP.</p></li>
+<li><p>Simply provide it once per application-run when first needed. Neo4jCP will remember your 'Administrator' password while it is active in memory, thereby eliminating the need to prompt for admin-elevation permissions during routine use of Neo4jCP.</p></li>
+</ol><h3>
+<a name="other-bits" class="anchor" href="#other-bits"><span class="octicon octicon-link"></span></a>Other Bits</h3>
+
+<p><strong>Before Use</strong>: Read through and edit the Neo4jCP.ini file to configure the Control Panel for your set-up and preferences. Be sure to adjust all paths to match your local configuration.</p>
+
+<p>If you prefer to run Neo4jCP from its Autohotkey script source, simply install Autohotkey from <a href="http://www.autohotkey.com/">http://www.autohotkey.com/</a> and run the Neo4jCP.ahk script together with its associated files found in the 'source' subfolder of the Neo4jCP repository or the project's zip file. Better yet, do you have an 'itch to scratch' that pushes Neo4jCP forward? Fork it! :-)</p>
+
+<p>For your convenience, there is a batch file in the sources folder to compile the script so that the Neo4jCP icon is associated with the produced executable.</p>
+
+<p>Feedback welcome through the Project's GitHub Issues at: <a href="https://github.com/Jim-Salmons/neo4jcp/issues">https://github.com/Jim-Salmons/neo4jcp/issues</a></p>
+
+<p>--Jim Salmons-- Cedar Rapids, Iowa USA</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Neo4jCP maintained by <a href="https://github.com/Jim-Salmons">Jim-Salmons</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
