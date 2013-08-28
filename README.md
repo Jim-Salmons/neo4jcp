@@ -33,7 +33,7 @@ http://www.howtogeek.com/howto/windows-vista/enable-the-hidden-administrator-acc
 IMPORTANT: Once enabled...
 ==========================
 
-You will need to go to the Manage User Accounts section of the Windows Control Panel, select the newly visible Administrator User account, then set its password. Once the 'Administrator' password is set, you may configure Neo4jCP to use it:
+You will need to go to the Manage User Accounts section of the Windows Control Panel, select the newly visible Administrator User account, then set its password. Once the 'Administrator' password is set, you are ready to configure Neo4jCP to use it. You may choose one of two methods:
 
 1. You can enter the 'Administrator' password in your Neo4jCP.ini file so you won't have to enter it ever when using Neo4jCP.
 
@@ -42,8 +42,12 @@ You will need to go to the Manage User Accounts section of the Windows Control P
 Other Bits
 ==========
 
-Edit the Neo4jCP.ini file to configure it for your set-up and preferences. Be sure to adjust all paths to match your local configuration.
+Edit the Neo4jCP.ini file to configure the Control Panel for your set-up and preferences. Be sure to adjust all paths to match your local configuration.
 
 If you prefer to run Neo4jCP from its Autohotkey script source, simply install Autohotkey from http://www.autohotkey.com/ and use the Neo4jCP.ahk script and associated files found in the 'source' subfolder of the Neo4jCP repository or the project's zip file. Better yet, do you have an 'itch to scratch' that pushes Neo4jCP forward? Fork it! :-)
+
+For your convenience, there is a batch file in the sources folder to compile the script so that the Neo4jCP icon is associated with the produced executable.
+
+Feedback welcome through the Project's GitHub Issues at: https://github.com/Jim-Salmons/neo4jcp/issues
 
 --Jim Salmons-- Cedar Rapids, Iowa USA
