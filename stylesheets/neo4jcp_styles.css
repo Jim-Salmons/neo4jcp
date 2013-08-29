@@ -3,10 +3,10 @@
 
 .block_right {
   clear: right;
-  float: right
+  float: right;
 }
 
 .block_left {
   clear: left;
-  float: left
+  float: left;
 }
