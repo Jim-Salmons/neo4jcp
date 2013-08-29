@@ -1,6 +1,8 @@
 Neo4jCP
 =======
 
+Project home: http://jim-salmons.github.io/neo4jcp/ (including screencast overview)
+
 __Neo4jCP__ is a compact and convenient Control Panel for *managing Neo4j databases* and *controlling a Neo4j Server Service*. It runs as a __tray icon utility__ under __Windows OS__. An executable is provided for those who just want to use it. Source for the __Autohotkey script__ is provided.
 
 __Features__: You may start, stop, and restart the Neo4j Server Service from Neo4jCP as well as create, clone/copy, back-up, delete, and quickly switch between any databases available in your Neo4j 'data' storage folder/path.
