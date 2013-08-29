@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* Additional styles for the Neo4jCP project site at GitHub.com */
+
+.block_right {
+  clear: right;
+  float: right
+}
+
+.block_left {
+  clear: left;
+  float: left
+}
