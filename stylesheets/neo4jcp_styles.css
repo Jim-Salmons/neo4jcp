@@ -4,9 +4,11 @@
 .block-right {
   clear: right;
   float: right;
+  margin-left: 8px;
 }
 
 .block-left {
   clear: left;
   float: left;
+  margin-right: 8px;
 }
