@@ -3,7 +3,8 @@
 ; Neo4j Control Panel
 ;
 ; by Jim Salmons, https://github.com/Jim-Salmons
-; Project home: https://github.com/Jim-Salmons/XXX
+; Project Home: http://jim-salmons.github.io/neo4jcp/
+; Feedback/Issues: https://github.com/Jim-Salmons/Neo4jCP/Issues
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
 
@@ -18,6 +19,10 @@
 ;
 Neo4jCP_readIni()
 Neo4jCP_init()
+
+;; Listen for the Help button coming from the About box.
+;
+OnMessage(0x53, "WM_HELP")
 
 ;;;;;
 ;; The Control Panel main window...
@@ -35,8 +40,8 @@ Gui, Add, Radio, vDeleteAction_rb x192 y60 w50 h20 , Delete
 Gui, Font, underline
 Gui, Add, Text, vNew_txt cBlue gCreateNewDB_action x248 y62 w50 h20 , New...
 Gui, Font, normal
-Gui, Add, DropDownList, vTargetDB_ddl gTargetDB_action Sort x12 y90 w160
-Gui, Add, Text, x182 y86 w100 h30 , Select action then DB dropdown.
+Gui, Add, DropDownList, vTargetDB_ddl gTargetDB_action Sort x12 y90 w180
+Gui, Add, Text, x202 y86 w100 h30 , Select action then DB dropdown.
 Gui, Add, StatusBar, , TBD...
 
 ; Populate the DDL with current DB names...
@@ -84,9 +89,10 @@ Neo4jCP_tray_MenuHandler:
 	}
 	IfEqual, A_ThisMenuItem, About Neo4jCP
 	{
+		Gui +OwnDialogs
 		msgBox2Move := "About Neo4jCP"
 		SetTimer, WinMoveMsgBox, 20
-		MsgBox, , %msgBox2Move%, Neo4j Control Panel`nBy: Jim Salmons`nhttp://github.com/XXXX_TBD
+		MsgBox, 16384, %msgBox2Move%, Neo4j Control Panel`nBy: Jim Salmons`nProject Home: http://jim-salmons.github.io/neo4jcp/`nHelp opens browser on Project Issues/Feedback page.
 		return
 	}
 	IfEqual, A_ThisMenuItem, Exit Neo4jCP
@@ -817,6 +823,12 @@ Neo4jCP_init()
 	;
 	Neo4jCP_serverActions = start stop restart
 
+	return
+}
+
+WM_HELP(wParam, lParam)
+{
+	RunWait, cmd.exe /c start https://github.com/Jim-Salmons/Neo4jCP/issues, , Hide
 	return
 }
 
