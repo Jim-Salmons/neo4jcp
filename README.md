@@ -11,13 +11,13 @@ __Intended Use__: Neo4j Control Panel is a lightweight, convenient utility prima
 
 __Current State__: "I've scratched my itch." This utility was developed initially to help me during personal learning of Neo4j. Its emphasis is on quickly and easily switching among, adding, cloning/copying, and backing up multiple databases. This utility has not been tested on anything other than my personal development box which is Windows 7 x64. YMMV.
 
-### Enabling the Built-in Windows Adminstrator User Account
+### Enabling the Built-in Windows Administrator User Account
 
 If you are running Windows Vista, 7, or 8, you may need to enable your built-in __Windows 'Administrator' User account__ for this Control Panel to function correctly. 
 
 Neo4jCP must spawn processes that run as the built-in Windows 'Administator' User when controlling the Neo4j Server Service. Note that launching an application or command prompt 'As Administrator' under later Windows versions is NOT the same as having the 'Administrator' User account enabled.
 
-It is easy to enable your built-in 'Administrator' User account if it is not already available. Simply open an adminstrator-elevated command prompt window and enter this command:
+It is easy to enable your built-in 'Administrator' User account if it is not already available. Simply open an administrator-elevated command prompt window and enter this command:
 
 ```
 net user administrator /active:yes
